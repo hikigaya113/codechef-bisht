@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+#include<bits/stdc++.h>
+int main()
+{
+
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        string a,b,c;
+        cin>>a>>b>>c;
+        string x,y;
+        cin>>x>>y;
+       
+            if(x==a&&(y==b||y==c))
+            cout<<x<<endl;
+             if(y==a&&(x==b||x==c))
+            cout<<y<<endl;
+            if(x==b&&y==c)
+            {
+                cout<<x<<endl;
+
+            }
+            if(y==b&&x==c)
+            cout<<y<<endl;
+                 
+    }
+    return 0;
+}
